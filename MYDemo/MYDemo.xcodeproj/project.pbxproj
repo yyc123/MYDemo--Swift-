@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A33B4BA11EFE5AA200785855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BA01EFE5AA200785855 /* AppDelegate.swift */; };
-		A33B4BA31EFE5AA200785855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BA21EFE5AA200785855 /* ViewController.swift */; };
 		A33B4BA61EFE5AA200785855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BA41EFE5AA200785855 /* Main.storyboard */; };
 		A33B4BA81EFE5AA200785855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BA71EFE5AA200785855 /* Assets.xcassets */; };
 		A33B4BAB1EFE5AA200785855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BA91EFE5AA200785855 /* LaunchScreen.storyboard */; };
 		A33B4BB61EFE5AA200785855 /* MYDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BB51EFE5AA200785855 /* MYDemoTests.swift */; };
 		A33B4BC11EFE5AA200785855 /* MYDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BC01EFE5AA200785855 /* MYDemoUITests.swift */; };
+		A33B4BD31EFE5E2E00785855 /* ConstFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BD21EFE5E2E00785855 /* ConstFile.swift */; };
+		A33B4BD51EFE5FD400785855 /* UIcolor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BD41EFE5FD400785855 /* UIcolor+Extension.swift */; };
+		A33B4BD91EFE612F00785855 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BD81EFE612F00785855 /* RootTableViewController.swift */; };
+		A33B4BDB1EFE62CC00785855 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BDA1EFE62CC00785855 /* QRCodeViewController.swift */; };
+		A33B4BE01EFE659300785855 /* 扫一扫.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDD1EFE659300785855 /* 扫一扫.png */; };
+		A33B4BE11EFE659300785855 /* icon_torch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDE1EFE659300785855 /* icon_torch@2x.png */; };
+		A33B4BE21EFE659300785855 /* QRline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDF1EFE659300785855 /* QRline@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 /* Begin PBXFileReference section */
 		A33B4B9D1EFE5AA200785855 /* MYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33B4BA01EFE5AA200785855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A33B4BA21EFE5AA200785855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A33B4BA51EFE5AA200785855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A33B4BA71EFE5AA200785855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33B4BAA1EFE5AA200785855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		A33B4BBC1EFE5AA200785855 /* MYDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33B4BC01EFE5AA200785855 /* MYDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYDemoUITests.swift; sourceTree = "<group>"; };
 		A33B4BC21EFE5AA200785855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33B4BD21EFE5E2E00785855 /* ConstFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstFile.swift; sourceTree = "<group>"; };
+		A33B4BD41EFE5FD400785855 /* UIcolor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIcolor+Extension.swift"; sourceTree = "<group>"; };
+		A33B4BD81EFE612F00785855 /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		A33B4BDA1EFE62CC00785855 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		A33B4BDD1EFE659300785855 /* 扫一扫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫.png"; sourceTree = "<group>"; };
+		A33B4BDE1EFE659300785855 /* icon_torch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_torch@2x.png"; sourceTree = "<group>"; };
+		A33B4BDF1EFE659300785855 /* QRline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRline@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				A33B4BA01EFE5AA200785855 /* AppDelegate.swift */,
-				A33B4BA21EFE5AA200785855 /* ViewController.swift */,
 				A33B4BA41EFE5AA200785855 /* Main.storyboard */,
+				A33B4BD81EFE612F00785855 /* RootTableViewController.swift */,
+				A33B4BD61EFE60AD00785855 /* Module */,
+				A33B4BCE1EFE5DD200785855 /* Recources */,
+				A33B4BCF1EFE5DD200785855 /* Extension */,
+				A33B4BD01EFE5DD200785855 /* Libs */,
+				A33B4BD11EFE5DD200785855 /* Tools */,
 				A33B4BA71EFE5AA200785855 /* Assets.xcassets */,
 				A33B4BA91EFE5AA200785855 /* LaunchScreen.storyboard */,
 				A33B4BAC1EFE5AA200785855 /* Info.plist */,
@@ -123,6 +140,63 @@
 				A33B4BC21EFE5AA200785855 /* Info.plist */,
 			);
 			path = MYDemoUITests;
+			sourceTree = "<group>";
+		};
+		A33B4BCE1EFE5DD200785855 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				A33B4BDC1EFE657D00785855 /* QRCode */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		A33B4BCF1EFE5DD200785855 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A33B4BD41EFE5FD400785855 /* UIcolor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A33B4BD01EFE5DD200785855 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		A33B4BD11EFE5DD200785855 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A33B4BD21EFE5E2E00785855 /* ConstFile.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A33B4BD61EFE60AD00785855 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A33B4BD71EFE610800785855 /* QRCode */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		A33B4BD71EFE610800785855 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				A33B4BDA1EFE62CC00785855 /* QRCodeViewController.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		A33B4BDC1EFE657D00785855 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				A33B4BDD1EFE659300785855 /* 扫一扫.png */,
+				A33B4BDE1EFE659300785855 /* icon_torch@2x.png */,
+				A33B4BDF1EFE659300785855 /* QRline@2x.png */,
+			);
+			name = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +309,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33B4BE11EFE659300785855 /* icon_torch@2x.png in Resources */,
+				A33B4BE01EFE659300785855 /* 扫一扫.png in Resources */,
 				A33B4BAB1EFE5AA200785855 /* LaunchScreen.storyboard in Resources */,
+				A33B4BE21EFE659300785855 /* QRline@2x.png in Resources */,
 				A33B4BA81EFE5AA200785855 /* Assets.xcassets in Resources */,
 				A33B4BA61EFE5AA200785855 /* Main.storyboard in Resources */,
 			);
@@ -262,8 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33B4BA31EFE5AA200785855 /* ViewController.swift in Sources */,
 				A33B4BA11EFE5AA200785855 /* AppDelegate.swift in Sources */,
+				A33B4BD51EFE5FD400785855 /* UIcolor+Extension.swift in Sources */,
+				A33B4BD31EFE5E2E00785855 /* ConstFile.swift in Sources */,
+				A33B4BD91EFE612F00785855 /* RootTableViewController.swift in Sources */,
+				A33B4BDB1EFE62CC00785855 /* QRCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +499,7 @@
 				INFOPLIST_FILE = MYDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yyc.MYDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
