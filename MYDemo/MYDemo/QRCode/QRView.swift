@@ -35,12 +35,23 @@ class QRView: UIView {
         let line = UIImageView(frame: CGRect(x: frame.origin.x, y: frame.origin.y+5, width: frame.size.width, height: 2))
         line.image = UIImage(contentsOfFile: (mainPath?.appending("/QRline.png"))!)
         self.addSubview(line)
-        UIView.animate(withDuration: 2.5, delay: 0, options: .repeat, animations: { 
+        UIView.animate(withDuration: 2.5, delay: 0, options: .repeat, animations: {
+       
             line.frame = CGRect(origin: CGPoint(x: frame.origin.x, y: frame.size.height-10), size: line.frame.size)
         }) { (_) in
+            
             line.frame = CGRect(origin: CGPoint(x: frame.origin.x, y: frame.origin.y+5), size: line.frame.size)
 
         }
 
+    }
+}
+extension String{
+    func utf8encodedString() ->String {
+        var arr = [UInt8]()
+        arr += self.utf8
+        let enc = CFStringConvertEncodingToNSStringEncoding(UInt32(CFStringEncodings.GB_18030_2000.rawValue))
+        
+        return String(bytes: arr,encoding:String.Encoding(rawValue: enc))!
     }
 }

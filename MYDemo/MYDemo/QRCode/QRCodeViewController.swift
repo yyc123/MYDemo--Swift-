@@ -71,6 +71,7 @@ class QRCodeViewController: UIViewController {
         navigationItem.rightBarButtonItems = [photoBtn,flashBtn]
 
     }
+    //闪光灯
     @objc private func flashClick() {
         guard let dev = device else{
             return
@@ -91,8 +92,14 @@ class QRCodeViewController: UIViewController {
         }
         
     }
+    //打开相册
     @objc private func photoClick() {
-        
+        if !UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            return
+        }
+        let imagePickerVC = UIImagePickerController()
+        imagePickerVC.delegate = self
+        present(imagePickerVC, animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -187,4 +194,43 @@ extension QRCodeViewController: AVCaptureMetadataOutputObjectsDelegate{
             
         }
     }
+}
+//相册代理方法
+extension QRCodeViewController:UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+   
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        guard let image = (info[UIImagePickerControllerOriginalImage] as? UIImage) else { return
+        }
+        guard let ciImage = CIImage(image: image) else { return
+        }
+        //探测器
+        guard let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy:CIDetectorAccuracyHigh]) else{
+            return
+        }
+        let results = detector.features(in: ciImage)
+        if results.count == 0 {
+            print("没有识别到二维码")
+
+        }
+        for result in results {
+            
+            guard let str = (result as! CIQRCodeFeature).messageString else {
+                print("识别出错")
+                return
+            }
+//            
+//            let enc = CFStringConvertEncodingToNSStringEncoding(UInt32(CFStringEncodings.GB_18030_2000.rawValue))
+//
+//            let data = str.data(using: .utf8)
+//
+//            let newstr =  NSString(data: data!, encoding: enc)
+
+            print(str)
+        }
+        
+        
+        //实现此方法,系统就不会自动关闭相册,需手动关闭
+        picker.dismiss(animated: true, completion: nil)
+    }
+  
 }
