@@ -20,6 +20,7 @@
 		A33B4BE01EFE659300785855 /* 扫一扫.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDD1EFE659300785855 /* 扫一扫.png */; };
 		A33B4BE11EFE659300785855 /* icon_torch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDE1EFE659300785855 /* icon_torch@2x.png */; };
 		A33B4BE21EFE659300785855 /* QRline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDF1EFE659300785855 /* QRline@2x.png */; };
+		A3D6F4401F0099D10070EE35 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6F43F1F0099D10070EE35 /* QRView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A33B4BDD1EFE659300785855 /* 扫一扫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫.png"; sourceTree = "<group>"; };
 		A33B4BDE1EFE659300785855 /* icon_torch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_torch@2x.png"; sourceTree = "<group>"; };
 		A33B4BDF1EFE659300785855 /* QRline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRline@2x.png"; sourceTree = "<group>"; };
+		A3D6F43F1F0099D10070EE35 /* QRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				A33B4BDA1EFE62CC00785855 /* QRCodeViewController.swift */,
+				A3D6F43F1F0099D10070EE35 /* QRView.swift */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33B4BA11EFE5AA200785855 /* AppDelegate.swift in Sources */,
+				A3D6F4401F0099D10070EE35 /* QRView.swift in Sources */,
 				A33B4BD51EFE5FD400785855 /* UIcolor+Extension.swift in Sources */,
 				A33B4BD31EFE5E2E00785855 /* ConstFile.swift in Sources */,
 				A33B4BD91EFE612F00785855 /* RootTableViewController.swift in Sources */,
@@ -597,6 +601,7 @@
 				A33B4BC71EFE5AA200785855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A33B4BC81EFE5AA200785855 /* Build configuration list for PBXNativeTarget "MYDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +610,7 @@
 				A33B4BCA1EFE5AA200785855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A33B4BCB1EFE5AA200785855 /* Build configuration list for PBXNativeTarget "MYDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +619,7 @@
 				A33B4BCD1EFE5AA200785855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
