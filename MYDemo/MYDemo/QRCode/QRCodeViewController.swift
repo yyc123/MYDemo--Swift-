@@ -44,7 +44,11 @@ class QRCodeViewController: UIViewController {
         view.center = self.view.center
         return view
     }()
-   
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        cameraView.layer.removeAllAnimations()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "二维码"
@@ -104,7 +108,8 @@ class QRCodeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+      
+        cameraView.startAnimation()
     }
     func setupCamera() {
         

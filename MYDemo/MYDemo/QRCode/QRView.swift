@@ -10,6 +10,8 @@ import UIKit
 
 class QRView: UIView {
 
+    private var line: UIImageView!
+    private var myFrame: CGRect?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,17 +34,21 @@ class QRView: UIView {
         borderview.image = UIImage(contentsOfFile:  (mainPath?.appending("/扫一扫.png"))!)
         self.addSubview(borderview)
         
-        let line = UIImageView(frame: CGRect(x: frame.origin.x, y: frame.origin.y+5, width: frame.size.width, height: 2))
-        line.image = UIImage(contentsOfFile: (mainPath?.appending("/QRline.png"))!)
+      line = UIImageView(frame: CGRect(x: frame.origin.x, y: frame.origin.y+5, width: frame.size.width, height: 2))
+      line.image = UIImage(contentsOfFile: (mainPath?.appending("/QRline.png"))!)
         self.addSubview(line)
-        UIView.animate(withDuration: 2.5, delay: 0, options: .repeat, animations: {
+        myFrame = frame
        
-            line.frame = CGRect(origin: CGPoint(x: frame.origin.x, y: frame.size.height-10), size: line.frame.size)
+    }
+    func startAnimation() {
+        
+        guard let frame = self.myFrame else { return  }
+        UIView.animate(withDuration: 2.5, animations: {
+            UIView.setAnimationRepeatCount(MAXFLOAT)
+            self.line.frame.origin.y = frame.size.height-10
         }) { (_) in
+            self.line.frame.origin.y = frame.origin.y+5
             
-            line.frame = CGRect(origin: CGPoint(x: frame.origin.x, y: frame.origin.y+5), size: line.frame.size)
-
         }
-
     }
 }
