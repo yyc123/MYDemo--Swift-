@@ -218,12 +218,6 @@ extension QRCodeViewController:UIImagePickerControllerDelegate,UINavigationContr
                 print("识别出错")
                 return
             }
-//            
-//            let enc = CFStringConvertEncodingToNSStringEncoding(UInt32(CFStringEncodings.GB_18030_2000.rawValue))
-//
-//            let data = str.data(using: .utf8)
-//
-//            let newstr =  NSString(data: data!, encoding: enc)
 
             print(str)
         }

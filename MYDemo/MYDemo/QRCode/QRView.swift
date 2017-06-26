@@ -46,12 +46,3 @@ class QRView: UIView {
 
     }
 }
-extension String{
-    func utf8encodedString() ->String {
-        var arr = [UInt8]()
-        arr += self.utf8
-        let enc = CFStringConvertEncodingToNSStringEncoding(UInt32(CFStringEncodings.GB_18030_2000.rawValue))
-        
-        return String(bytes: arr,encoding:String.Encoding(rawValue: enc))!
-    }
-}
