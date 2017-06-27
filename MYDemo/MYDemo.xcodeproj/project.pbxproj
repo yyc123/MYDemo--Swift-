@@ -22,6 +22,10 @@
 		A33B4BE01EFE659300785855 /* 扫一扫.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDD1EFE659300785855 /* 扫一扫.png */; };
 		A33B4BE11EFE659300785855 /* icon_torch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDE1EFE659300785855 /* icon_torch@2x.png */; };
 		A33B4BE21EFE659300785855 /* QRline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDF1EFE659300785855 /* QRline@2x.png */; };
+		A3B4178F1F01E9D1002D42C3 /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4178E1F01E9D1002D42C3 /* NetworkRequests.swift */; };
+		A3B417921F025DAD002D42C3 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417911F025DAD002D42C3 /* MineViewController.swift */; };
+		A3B417941F025E68002D42C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417931F025E68002D42C3 /* BaseViewController.swift */; };
+		A3B417961F0261F6002D42C3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417951F0261F6002D42C3 /* UIView+Extension.swift */; };
 		A3D6F4401F0099D10070EE35 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6F43F1F0099D10070EE35 /* QRView.swift */; };
 		F58E9575AC6A336D2704FDE6 /* Pods_MYDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBC7106CB89A232C509F887 /* Pods_MYDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +74,10 @@
 		A33B4BDD1EFE659300785855 /* 扫一扫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫.png"; sourceTree = "<group>"; };
 		A33B4BDE1EFE659300785855 /* icon_torch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_torch@2x.png"; sourceTree = "<group>"; };
 		A33B4BDF1EFE659300785855 /* QRline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRline@2x.png"; sourceTree = "<group>"; };
+		A3B4178E1F01E9D1002D42C3 /* NetworkRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
+		A3B417911F025DAD002D42C3 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		A3B417931F025E68002D42C3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A3B417951F0261F6002D42C3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A3D6F43F1F0099D10070EE35 /* QRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
 		BDDFFDBD0CAF770317B90DB1 /* Pods-MYDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYDemo/Pods-MYDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CC15A15EA1A83B76966EE42D /* Pods-MYDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYDemo/Pods-MYDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				A33B4BD41EFE5FD400785855 /* UIcolor+Extension.swift */,
+				A3B417951F0261F6002D42C3 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				A33B4BD21EFE5E2E00785855 /* ConstFile.swift */,
+				A3B4178E1F01E9D1002D42C3 /* NetworkRequests.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -219,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				A33B4BD71EFE610800785855 /* QRCode */,
+				A3B417901F025D78002D42C3 /* Mine */,
+				A3B417931F025E68002D42C3 /* BaseViewController.swift */,
 			);
 			name = Module;
 			sourceTree = "<group>";
@@ -240,6 +252,14 @@
 				A33B4BDF1EFE659300785855 /* QRline@2x.png */,
 			);
 			name = QRCode;
+			sourceTree = "<group>";
+		};
+		A3B417901F025D78002D42C3 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A3B417911F025DAD002D42C3 /* MineViewController.swift */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,7 +551,11 @@
 			files = (
 				A33B4BA11EFE5AA200785855 /* AppDelegate.swift in Sources */,
 				A3D6F4401F0099D10070EE35 /* QRView.swift in Sources */,
+				A3B4178F1F01E9D1002D42C3 /* NetworkRequests.swift in Sources */,
+				A3B417921F025DAD002D42C3 /* MineViewController.swift in Sources */,
+				A3B417961F0261F6002D42C3 /* UIView+Extension.swift in Sources */,
 				A33B4BD51EFE5FD400785855 /* UIcolor+Extension.swift in Sources */,
+				A3B417941F025E68002D42C3 /* BaseViewController.swift in Sources */,
 				A33B4BD31EFE5E2E00785855 /* ConstFile.swift in Sources */,
 				A33B4BD91EFE612F00785855 /* RootTableViewController.swift in Sources */,
 				A33B4BDB1EFE62CC00785855 /* QRCodeViewController.swift in Sources */,

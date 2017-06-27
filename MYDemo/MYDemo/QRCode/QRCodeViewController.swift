@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class QRCodeViewController: UIViewController {
+class QRCodeViewController: BaseViewController {
     //扫描框大小
     var QRCodeFrame: CGSize = CGSize(width: 290, height: 290)
     var previewLayer: AVCaptureVideoPreviewLayer?
@@ -53,7 +53,6 @@ class QRCodeViewController: UIViewController {
         super.viewDidLoad()
         self.title = "二维码"
         
-        view.backgroundColor = UIColor.white
         guard !Platform.isSimulator else {
             let alert = UIAlertController(title: "错误", message: "模拟器无法扫描二维码", preferredStyle: .alert);
             

@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        printDebug("test");
+        //全局颜色设置
+        UINavigationBar.appearance().tintColor = UIColor.black
         return true
     }
 

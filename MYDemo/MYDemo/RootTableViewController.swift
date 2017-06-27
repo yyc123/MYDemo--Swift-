@@ -10,9 +10,11 @@ import UIKit
 
 class RootTableViewController: UITableViewController {
 
-    let array = ["二维码"];
+    let array = ["二维码",
+                 "个人主页(头部下拉放大)"];
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(NetworkRequests.shared)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -53,6 +55,9 @@ class RootTableViewController: UITableViewController {
         case 0:
             let QRcodeVC =   QRCodeViewController()
             navigationController?.pushViewController(QRcodeVC, animated: true);
+        case 1:
+            let mineVC =   MineViewController()
+            navigationController?.pushViewController(mineVC, animated: true);
         default:
             return;
         }
