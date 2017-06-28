@@ -8,10 +8,10 @@
 
 import UIKit
 
-class RootTableViewController: UITableViewController {
+class RootTableViewController: BaseTableViewController {
 
     let array = ["二维码",
-                 "个人主页(头部下拉放大)"];
+                 "个人主页(头部下拉放大,导航栏透明)"];
     override func viewDidLoad() {
         super.viewDidLoad()
         print(NetworkRequests.shared)
@@ -22,7 +22,9 @@ class RootTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

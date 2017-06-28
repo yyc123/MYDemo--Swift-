@@ -1,29 +1,29 @@
 //
-//  BaseViewController.swift
+//  BaseTableViewController.swift
 //  MYDemo
 //
-//  Created by 德基 on 2017/6/27.
+//  Created by 德基 on 2017/6/28.
 //  Copyright © 2017年 yyc. All rights reserved.
 //
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
 
-        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated);
-        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFont(ofSize: 18),NSForegroundColorAttributeName:UIColor.black]
+        super.viewWillAppear(animated)
+        
         self.navigationController!.setNavigationBarHidden(false, animated: true);
         UIApplication.shared.statusBarStyle = .default;
+        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFont(ofSize: 18),NSForegroundColorAttributeName:UIColor.black]
         //全局颜色设置
         UINavigationBar.appearance().tintColor = UIColor.black
-        
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -34,6 +34,7 @@ class MineViewController: BaseViewController {
         imageView.contentMode = UIViewContentMode.scaleAspectFill;
         imageView.clipsToBounds = true;
         imageView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: self.headHeght);
+        
         return imageView
     }()
     override func viewDidLoad() {
@@ -51,10 +52,28 @@ class MineViewController: BaseViewController {
     func setTableHeader() {
         tableView.tableHeaderView = headView
         headView.addSubview(headImageView)
+        let backBtn = UIButton(type: .custom)
+        backBtn.setTitle("返回", for: .normal)
+        headView.addSubview(backBtn)
+        backBtn.center = headImageView.center
+        backBtn.bounds = CGRect(origin: CGPoint(), size: CGSize(width: 50, height: 50))
+        backBtn.backgroundColor = UIColor.orange
+        backBtn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+    
+        
+    }
+    func goBack()  {
+        navigationController?.popViewController(animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        //改变状态栏颜色需要在info.plist添加:
+        //View controller-based status bar appearance   = NO
+        
+        UIApplication.shared.statusBarStyle = .lightContent;
+
         navigationController?.setNavigationBarHidden(true, animated: true)
+     
         
     }
     override func viewWillDisappear(_ animated: Bool) {
@@ -89,7 +108,10 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let  cell = tableView.dequeueReusableCell(withIdentifier: MINECELL)
-        
+        cell?.textLabel?.text = "点击进入下一页查看导航条渐变"
         return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(MYViewController(), animated: true)
     }
 }

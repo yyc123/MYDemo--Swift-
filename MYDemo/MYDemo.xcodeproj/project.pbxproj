@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6530DD42354842EEFF726D1B /* Pods_MYDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FBC737EBAA13680A190F1E /* Pods_MYDemoTests.framework */; };
 		8622B79132CDC3AC1032DD74 /* Pods_MYDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373F7A6DB017F92C982716E6 /* Pods_MYDemo.framework */; };
+		A304976B1F034FB1009AFCE6 /* MYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304976A1F034FB1009AFCE6 /* MYViewController.swift */; };
+		A304976D1F035B1A009AFCE6 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304976C1F035B1A009AFCE6 /* BaseTableViewController.swift */; };
 		A33B4BA11EFE5AA200785855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B4BA01EFE5AA200785855 /* AppDelegate.swift */; };
 		A33B4BA61EFE5AA200785855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BA41EFE5AA200785855 /* Main.storyboard */; };
 		A33B4BA81EFE5AA200785855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BA71EFE5AA200785855 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		5FBC7106CB89A232C509F887 /* Pods_MYDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8329D19F6B6A5901A55B4B7C /* Pods-MYDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYDemoTests/Pods-MYDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E59D92E1122316F72A78BBE /* Pods-MYDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYDemoUITests/Pods-MYDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A304976A1F034FB1009AFCE6 /* MYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYViewController.swift; sourceTree = "<group>"; };
+		A304976C1F035B1A009AFCE6 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		A33B4B9D1EFE5AA200785855 /* MYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33B4BA01EFE5AA200785855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33B4BA51EFE5AA200785855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 				A33B4BD71EFE610800785855 /* QRCode */,
 				A3B417901F025D78002D42C3 /* Mine */,
 				A3B417931F025E68002D42C3 /* BaseViewController.swift */,
+				A304976C1F035B1A009AFCE6 /* BaseTableViewController.swift */,
 			);
 			name = Module;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B417911F025DAD002D42C3 /* MineViewController.swift */,
+				A304976A1F034FB1009AFCE6 /* MYViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -551,9 +557,11 @@
 			files = (
 				A33B4BA11EFE5AA200785855 /* AppDelegate.swift in Sources */,
 				A3D6F4401F0099D10070EE35 /* QRView.swift in Sources */,
+				A304976B1F034FB1009AFCE6 /* MYViewController.swift in Sources */,
 				A3B4178F1F01E9D1002D42C3 /* NetworkRequests.swift in Sources */,
 				A3B417921F025DAD002D42C3 /* MineViewController.swift in Sources */,
 				A3B417961F0261F6002D42C3 /* UIView+Extension.swift in Sources */,
+				A304976D1F035B1A009AFCE6 /* BaseTableViewController.swift in Sources */,
 				A33B4BD51EFE5FD400785855 /* UIcolor+Extension.swift in Sources */,
 				A3B417941F025E68002D42C3 /* BaseViewController.swift in Sources */,
 				A33B4BD31EFE5E2E00785855 /* ConstFile.swift in Sources */,
