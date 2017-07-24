@@ -11,7 +11,9 @@ import UIKit
 class RootTableViewController: BaseTableViewController {
 
     let array = ["二维码",
-                 "个人主页(头部下拉放大,导航栏透明)"];
+                 "个人主页(头部下拉放大,导航栏透明)",
+                 "底部弹出菜单"
+                 ];
     override func viewDidLoad() {
         super.viewDidLoad()
         print(NetworkRequests.shared)
@@ -60,6 +62,10 @@ class RootTableViewController: BaseTableViewController {
         case 1:
             let mineVC =   MineViewController()
             navigationController?.pushViewController(mineVC, animated: true);
+        case 2:
+            let menuVC =   MenuViewController()
+            navigationController?.pushViewController(menuVC, animated: true);
+
         default:
             return;
         }

@@ -25,7 +25,8 @@ func printDebug<T>(_ message: T, fileName: String = #file, methodName: String = 
 //屏幕宽高
 let kScreenHeight = UIScreen.main.bounds.size.height
 let kScreenWidth = UIScreen.main.bounds.size.width
-
+//分割线颜色
+let Line_collor  = UIColor.ColorFromHexString(hexString: "#e7e7e7")
 
 //细体字体
 let  font_light = "HelveticaNeue-Light"
