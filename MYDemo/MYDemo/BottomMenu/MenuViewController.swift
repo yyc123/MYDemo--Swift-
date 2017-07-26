@@ -24,6 +24,7 @@ class MenuViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     func displayMenu()  {
+        view.backgroundColor = UIColor.randomColor()
       let menuView =  BottomMenuView(dataArray: ["关注","分享","举报"])
         menuView.show { (index) in
             printDebug(index)

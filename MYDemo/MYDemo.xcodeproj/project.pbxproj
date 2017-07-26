@@ -27,6 +27,9 @@
 		A33B4BE11EFE659300785855 /* icon_torch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDE1EFE659300785855 /* icon_torch@2x.png */; };
 		A33B4BE21EFE659300785855 /* QRline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A33B4BDF1EFE659300785855 /* QRline@2x.png */; };
 		A340F5401F25A19E00E3EF21 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A340F53F1F25A19E00E3EF21 /* MenuViewController.swift */; };
+		A340F5421F25DA8E00E3EF21 /* GlobalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A340F5411F25DA8E00E3EF21 /* GlobalManager.swift */; };
+		A363DD791F288C5700AC5247 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363DD781F288C5700AC5247 /* TextViewViewController.swift */; };
+		A363DD7B1F288CAA00AC5247 /* UIPlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363DD7A1F288CAA00AC5247 /* UIPlaceHolderTextView.swift */; };
 		A3B4178F1F01E9D1002D42C3 /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4178E1F01E9D1002D42C3 /* NetworkRequests.swift */; };
 		A3B417921F025DAD002D42C3 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417911F025DAD002D42C3 /* MineViewController.swift */; };
 		A3B417941F025E68002D42C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417931F025E68002D42C3 /* BaseViewController.swift */; };
@@ -84,6 +87,9 @@
 		A33B4BDE1EFE659300785855 /* icon_torch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_torch@2x.png"; sourceTree = "<group>"; };
 		A33B4BDF1EFE659300785855 /* QRline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRline@2x.png"; sourceTree = "<group>"; };
 		A340F53F1F25A19E00E3EF21 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A340F5411F25DA8E00E3EF21 /* GlobalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalManager.swift; sourceTree = "<group>"; };
+		A363DD781F288C5700AC5247 /* TextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
+		A363DD7A1F288CAA00AC5247 /* UIPlaceHolderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPlaceHolderTextView.swift; sourceTree = "<group>"; };
 		A3B4178E1F01E9D1002D42C3 /* NetworkRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
 		A3B417911F025DAD002D42C3 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		A3B417931F025E68002D42C3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +247,7 @@
 			children = (
 				A33B4BD21EFE5E2E00785855 /* ConstFile.swift */,
 				A3B4178E1F01E9D1002D42C3 /* NetworkRequests.swift */,
+				A340F5411F25DA8E00E3EF21 /* GlobalManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 		A33B4BD61EFE60AD00785855 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				A363DD771F288C3D00AC5247 /* PlaceHodleTextView */,
 				A3178A4C1F235104000C94AF /* BottomMenu */,
 				A33B4BD71EFE610800785855 /* QRCode */,
 				A3B417901F025D78002D42C3 /* Mine */,
@@ -274,6 +282,15 @@
 				A33B4BDF1EFE659300785855 /* QRline@2x.png */,
 			);
 			name = QRCode;
+			sourceTree = "<group>";
+		};
+		A363DD771F288C3D00AC5247 /* PlaceHodleTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A363DD781F288C5700AC5247 /* TextViewViewController.swift */,
+				A363DD7A1F288CAA00AC5247 /* UIPlaceHolderTextView.swift */,
+			);
+			path = PlaceHodleTextView;
 			sourceTree = "<group>";
 		};
 		A3B417901F025D78002D42C3 /* Mine */ = {
@@ -579,9 +596,12 @@
 				A3B4178F1F01E9D1002D42C3 /* NetworkRequests.swift in Sources */,
 				A3B417921F025DAD002D42C3 /* MineViewController.swift in Sources */,
 				A3B417961F0261F6002D42C3 /* UIView+Extension.swift in Sources */,
+				A363DD7B1F288CAA00AC5247 /* UIPlaceHolderTextView.swift in Sources */,
 				A3178A4E1F235177000C94AF /* BottomMenuView.swift in Sources */,
 				A304976D1F035B1A009AFCE6 /* BaseTableViewController.swift in Sources */,
 				A33B4BD51EFE5FD400785855 /* UIcolor+Extension.swift in Sources */,
+				A363DD791F288C5700AC5247 /* TextViewViewController.swift in Sources */,
+				A340F5421F25DA8E00E3EF21 /* GlobalManager.swift in Sources */,
 				A3178A501F235196000C94AF /* BottomMenuCell.swift in Sources */,
 				A3B417941F025E68002D42C3 /* BaseViewController.swift in Sources */,
 				A33B4BD31EFE5E2E00785855 /* ConstFile.swift in Sources */,

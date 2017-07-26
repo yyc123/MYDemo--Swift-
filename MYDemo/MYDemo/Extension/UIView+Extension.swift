@@ -18,5 +18,18 @@ extension UIView {
         // Drawing code
     }
     */
+    // 查找view所在的vc
+    func responderViewController() -> UIViewController {
+        var responder: UIResponder! = nil
+        var next = self.superview
+        while next != nil {
+            responder = next?.next
+            if (responder!.isKind(of: UIViewController.self)){
+                return (responder as! UIViewController)
+            }
+            next = next?.superview
+        }
+        return (responder as! UIViewController)
+    }
 
 }

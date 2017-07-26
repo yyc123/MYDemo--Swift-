@@ -8,6 +8,16 @@
 
 import UIKit
 extension UIColor{
+   
+    //随机色
+    class func randomColor() -> UIColor {
+        
+        let redV = CGFloat(arc4random() % 255) / 255.0
+        let greenV =  CGFloat(arc4random() % 255) / 255.0
+        let blueV =  CGFloat(arc4random() % 255) / 255.0
+        let randColor = UIColor(red: redV, green: greenV, blue: blueV, alpha: 1)
+        return randColor
+    }
     //创建一张颜色图片
    class  func createImageWithColor(_ color: UIColor) -> UIImage? {
         
