@@ -13,8 +13,7 @@ target 'MYDemo' do
     # Pods for testing
   end
 
-  target 'MYDemoUITests' do
-    inherit! :search_paths
+     inherit! :search_paths
     # Pods for testing
   end
 

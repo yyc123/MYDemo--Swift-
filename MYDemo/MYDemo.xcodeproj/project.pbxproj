@@ -34,6 +34,10 @@
 		A3B417921F025DAD002D42C3 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417911F025DAD002D42C3 /* MineViewController.swift */; };
 		A3B417941F025E68002D42C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417931F025E68002D42C3 /* BaseViewController.swift */; };
 		A3B417961F0261F6002D42C3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B417951F0261F6002D42C3 /* UIView+Extension.swift */; };
+		A3D2A2331F42E08700EC4BD3 /* ScrollTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2321F42E08700EC4BD3 /* ScrollTitleView.swift */; };
+		A3D2A2351F42E66900EC4BD3 /* YCScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2341F42E66900EC4BD3 /* YCScrollViewViewController.swift */; };
+		A3D2A2371F42EA5200EC4BD3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A2361F42EA5200EC4BD3 /* TestViewController.swift */; };
+		A3D2A23B1F42ED1900EC4BD3 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2A23A1F42ED1900EC4BD3 /* PageContentView.swift */; };
 		A3D6F4401F0099D10070EE35 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6F43F1F0099D10070EE35 /* QRView.swift */; };
 		F58E9575AC6A336D2704FDE6 /* Pods_MYDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBC7106CB89A232C509F887 /* Pods_MYDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +98,10 @@
 		A3B417911F025DAD002D42C3 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		A3B417931F025E68002D42C3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A3B417951F0261F6002D42C3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A3D2A2321F42E08700EC4BD3 /* ScrollTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTitleView.swift; sourceTree = "<group>"; };
+		A3D2A2341F42E66900EC4BD3 /* YCScrollViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCScrollViewViewController.swift; sourceTree = "<group>"; };
+		A3D2A2361F42EA5200EC4BD3 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		A3D2A23A1F42ED1900EC4BD3 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		A3D6F43F1F0099D10070EE35 /* QRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
 		BDDFFDBD0CAF770317B90DB1 /* Pods-MYDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYDemo/Pods-MYDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CC15A15EA1A83B76966EE42D /* Pods-MYDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYDemo/Pods-MYDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +263,7 @@
 		A33B4BD61EFE60AD00785855 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				A3D2A2311F42E04A00EC4BD3 /* YCScrollView */,
 				A363DD771F288C3D00AC5247 /* PlaceHodleTextView */,
 				A3178A4C1F235104000C94AF /* BottomMenu */,
 				A33B4BD71EFE610800785855 /* QRCode */,
@@ -300,6 +309,25 @@
 				A304976A1F034FB1009AFCE6 /* MYViewController.swift */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		A3D2A2311F42E04A00EC4BD3 /* YCScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				A3DF649B1F5D280900DC10D4 /* View */,
+				A3D2A2341F42E66900EC4BD3 /* YCScrollViewViewController.swift */,
+				A3D2A2361F42EA5200EC4BD3 /* TestViewController.swift */,
+			);
+			path = YCScrollView;
+			sourceTree = "<group>";
+		};
+		A3DF649B1F5D280900DC10D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3D2A2321F42E08700EC4BD3 /* ScrollTitleView.swift */,
+				A3D2A23A1F42ED1900EC4BD3 /* PageContentView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,6 +621,8 @@
 				A340F5401F25A19E00E3EF21 /* MenuViewController.swift in Sources */,
 				A3D6F4401F0099D10070EE35 /* QRView.swift in Sources */,
 				A304976B1F034FB1009AFCE6 /* MYViewController.swift in Sources */,
+				A3D2A2351F42E66900EC4BD3 /* YCScrollViewViewController.swift in Sources */,
+				A3D2A2371F42EA5200EC4BD3 /* TestViewController.swift in Sources */,
 				A3B4178F1F01E9D1002D42C3 /* NetworkRequests.swift in Sources */,
 				A3B417921F025DAD002D42C3 /* MineViewController.swift in Sources */,
 				A3B417961F0261F6002D42C3 /* UIView+Extension.swift in Sources */,
@@ -600,6 +630,8 @@
 				A3178A4E1F235177000C94AF /* BottomMenuView.swift in Sources */,
 				A304976D1F035B1A009AFCE6 /* BaseTableViewController.swift in Sources */,
 				A33B4BD51EFE5FD400785855 /* UIcolor+Extension.swift in Sources */,
+				A3D2A23B1F42ED1900EC4BD3 /* PageContentView.swift in Sources */,
+				A3D2A2331F42E08700EC4BD3 /* ScrollTitleView.swift in Sources */,
 				A363DD791F288C5700AC5247 /* TextViewViewController.swift in Sources */,
 				A340F5421F25DA8E00E3EF21 /* GlobalManager.swift in Sources */,
 				A3178A501F235196000C94AF /* BottomMenuCell.swift in Sources */,

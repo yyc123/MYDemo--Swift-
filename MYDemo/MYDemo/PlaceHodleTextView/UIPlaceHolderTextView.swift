@@ -65,6 +65,7 @@ class UIPlaceHolderTextView: UITextView {
     
         if (placeholder! as NSString).length > 0 {
             addSubview(placeHolderLabel)
+
             if self.font != nil {
                 placeHolderLabel.font = self.font
 

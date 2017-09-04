@@ -52,13 +52,7 @@ class MineViewController: BaseViewController {
     func setTableHeader() {
         tableView.tableHeaderView = headView
         headView.addSubview(headImageView)
-        let backBtn = UIButton(type: .custom)
-        backBtn.setTitle("返回", for: .normal)
-        headView.addSubview(backBtn)
-        backBtn.center = headImageView.center
-        backBtn.bounds = CGRect(origin: CGPoint(), size: CGSize(width: 50, height: 50))
-        backBtn.backgroundColor = UIColor.orange
-        backBtn.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+   
     
         
     }

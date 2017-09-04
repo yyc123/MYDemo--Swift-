@@ -13,7 +13,8 @@ class RootTableViewController: BaseTableViewController {
     let array = ["二维码",
                  "个人主页(头部下拉放大,导航栏透明)",
                  "底部弹出菜单",
-                 "PlaceHolderTextView"
+                 "PlaceHolderTextView",
+                 "导航标签栏与控制器联动"
         
                  ];
     override func viewDidLoad() {
@@ -70,6 +71,11 @@ class RootTableViewController: BaseTableViewController {
         case 3:
             let textVC =   TextViewViewController()
             navigationController?.pushViewController(textVC, animated: true);
+        case 4:
+            let scrollVC =   YCScrollViewViewController()
+            navigationController?.pushViewController(scrollVC, animated: true);
+
+            
         default:
             return;
         }

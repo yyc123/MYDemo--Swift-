@@ -13,6 +13,8 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        //即使不存在导航栏也能左滑返回
+        navigationController?.interactivePopGestureRecognizer?.delegate =  self as? UIGestureRecognizerDelegate
 
         // Do any additional setup after loading the view.
     }

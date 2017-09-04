@@ -1,29 +1,25 @@
 //
-//  TextViewViewController.swift
+//  TestViewController1.swift
 //  MYDemo
 //
-//  Created by 德基 on 2017/7/26.
+//  Created by 德基 on 2017/8/15.
 //  Copyright © 2017年 yyc. All rights reserved.
 //
 
 import UIKit
 
-class TextViewViewController: BaseViewController {
+class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let textview = UIPlaceHolderTextView(frame: CGRect(x: 100, y: 200, width: 200, height: 100));
-        textview.placeholder = "这是一段占位符"
-        textview.layer.borderWidth = 1
-        textview.layer.borderColor = UIColor.blue.cgColor
-        textview.font = UIFont.systemFont(ofSize: 16)
-        view.addSubview(textview)
-        self.automaticallyAdjustsScrollViewInsets = false
+        view.backgroundColor = UIColor.randomColor()
+        let label = UILabel(frame: CGRect(origin: self.view.center, size: CGSize(width: 100, height: 100)));
+        label.textColor = UIColor.black
+        view.addSubview(label)
+        label.text = self.title
         // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
