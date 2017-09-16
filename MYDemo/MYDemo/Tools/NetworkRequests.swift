@@ -10,6 +10,7 @@ import UIKit
 
 class NetworkRequests: NSObject {
 
+    
     //单例
     static let shared: NetworkRequests = NetworkRequests()
     private override init() {

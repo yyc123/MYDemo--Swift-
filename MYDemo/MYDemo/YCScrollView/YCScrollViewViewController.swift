@@ -13,17 +13,12 @@ class YCScrollViewViewController: BaseViewController {
     var titles: [String]!
     var titleView: ScrollTitleView!
     var contentView: PageContentView!
-      
-  
-
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         setupUI()
 
-             // Do any additional setup after loading the view.
     }
     func setupUI() {
         self.titles = ["推荐", "游戏", "娱乐", "趣玩","逗你玩"]
@@ -42,13 +37,11 @@ class YCScrollViewViewController: BaseViewController {
         contentView = PageContentView(frame: contentFrame, childVCs: childVCs, parentVC: self)
         contentView.delegate = self
         view.addSubview(titleView)
-       view.addSubview(contentView)
+        view.addSubview(contentView)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
 
     deinit {
         print("释放")

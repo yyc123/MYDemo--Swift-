@@ -1,6 +1,0 @@
-framework module Pods_MYDemoUITests {
-  umbrella header "Pods-MYDemoUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

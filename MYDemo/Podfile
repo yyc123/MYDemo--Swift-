@@ -6,6 +6,7 @@ target 'MYDemo' do
   use_frameworks!
     pod 'Alamofire', '~> 4.4'
     pod 'SnapKit', '~> 3.2.0'
+    pod 'FMDB'
   # Pods for MYDemo
 
   target 'MYDemoTests' do
@@ -13,8 +14,6 @@ target 'MYDemo' do
     # Pods for testing
   end
 
-     inherit! :search_paths
-    # Pods for testing
-  end
+
 
 end
